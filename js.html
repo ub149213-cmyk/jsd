@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="new.js"></script>
+</head>
+
+<body>
+
+  
+
+   <!-- <script> (day 1)
+  alert ("your password is incorrect");
+  console.log ("js is working ");
+  document.write ("its write from js");
+</script>  -->
+
+
+
+
+   <!-- <script> (day 2)
+     <script> 
+  var name = "ali";
+  var age = 19 ;
+  document.write(name +  age)
+</script> -->
+
+
+
+
+
+
+
+
+ <!-- <script>   (day3)
+    var name =prompt("enter your name")
+    var age =prompt("enter your age")
+    var number =prompt("type your number")
+    document.write( "your name is :"  + name + "<br>"+"your age is :" +  age + "<br>" + "your number is :" + number + "<br>")
+</script>  -->
+
+<!-- <script>
+  var name =prompt("what is your name")
+  var fname =prompt("what is your  fname ")
+  console.log(name + " " + fname )
+</script> -->
+
+
+
+ <!-- (day 4) -->
+  
+ <!-- <script> 
+  var age =prompt("whats your age ")
+  if(age >= 18) {
+    alert("You are adult");
+  } else {
+    alert("You are a minor");
+  }
+</script>  -->
+
+<!-- <script>
+  var age =prompt("how old are you")
+  if(age>=18){
+    alert("you are adult")
+  } else{
+    alert("tum abhi bache ho")
+  }
+</script> -->
+
+
+
+
+
+ <!-- <script>  (day 5)
+ var marks = prompt ("write your percantage ")
+  if(marks >=90){
+    alert("Grade A+")
+  } else if(marks >=80){
+    alert("Grade A1 ")
+  } else if(marks  >=70){
+    alert("Grade B")
+  } else if(marks >=60){
+    alert("Grade C")
+  } else if(marks >=50){
+    alert("Grade D")
+  } else{
+    alert("ae gurbat teri bhen di tu mil sai tenu cheer detha me")
+  }
+</script>  -->
+
+
+
+
+
+   
+
+<!-- 
+   day (6) 
+<button onclick="sayhello()">click here</button>
+<script>
+  function sayhello(){
+    alert("hello dear wel come to myweb")
+  }
+</script>  -->
+
+
+
+<!-- day (7) 
+
+  <p id="text">Old Text</p>
+<button onclick="changeText()">Change</button>
+<script>
+  function changeText() {
+    document.getElementById("text").innerHTML = "New Text!";
+  }
+</script>   -->
+
+
+
+
+
+<!-- <p id="text">old version</p>
+<button onclick="changetext()">update version</button>
+<script>
+  function changetext(){
+    if(text.innerHTML == "old version"){
+      text.innerHTML = "new version"
+      
+    } else {
+      text.innerHTML ="old version"
+    }
+  }
+</script> -->
+
+
+<!-- 
+<style>
+  .dark{
+    background-color: black;
+    color: white;
+  }
+</style>
+  <h1>dark mode</h1>
+<button onclick="toggleMode()">🌙</button>
+<script>
+  function toggleMode(){
+    document.body.classList.toggle("dark")
+  }
+</script>  -->
+
+
+
+
+
+
+
+<!-- <h1>Dark Mode</h1>
+<button id="modeBtn" onclick="toggleMode()">🌙</button>
+<script>
+  function toggleMode(){
+    document.body.classList.toggle("dark")
+
+    let btn = document.getElementById("modeBtn")
+
+    if(document.body.classList.contains("dark")){
+      btn.innerHTML = "☀️"   // dark mode on → show light icon
+    } else {
+      btn.innerHTML = "🌙"   // light mode on → show dark icon
+    }
+  }
+</script>
+<style>
+  .dark{
+    background-color: black;
+    color: white;
+  }
+</style> -->
+
+
+
+
+<!-- <input type="password" id="hide">
+<button onclick="hideseek()">👁</button>
+
+<script>
+  function hideseek(){
+    var pass = document.getElementById("hide");
+    if(pass.type ==="password"){
+      pass.type ="text";
+    } else {
+      pass.type = "password"
+    }
+  }
+</script> -->
+
+
+
+
+ <!-- <h2 id="count">99</h2> 
+<button onclick="increase()">➕</button> 
+<button onclick="decrease()">➖</button>
+<script>
+  var num=99;
+  function increase(){
+    num++;
+    document.getElementById("count").innerHTML=num;
+  }
+  function decrease(){
+    num--;
+    document.getElementById("count").innerHTML=num;
+  }
+</script> -->
+
+
+
+
+<!-- 
+<style>
+  body{
+    text-align: center;
+    margin-top: 300px;
+    background: #000;
+    color: white;
+  }
+  input{
+    appearance: none;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,gold,red);
+    box-shadow: 0 0 5px orange;
+
+  }
+  input::-webkit-slider-thumb{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: radial-gradient(rgb(0, 0, 0),red);
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+
+  }
+</style>
+<div>
+  <h1>50</h1>
+<input type="range"  min="10" max="2000" oninput="document.querySelector('h1').innerHTML = this.value">
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   <!-- <h1>🌈 Click the Button to Change Color!</h1>
+<button onclick="changeColor()">Change BG</button>
+ <script>
+var colors = ['red','blue','green','yellow','pink','purple','orange'];
+ var i = 0;
+
+function changeColor(){
+  document.body.style.backgroundColor = colors[i];
+  i++;
+  if(i >= colors.length) i = 0;
+}
+</script> 
+<style>
+  body{
+    transition: background 2s ease;
+  }
+</style> -->
+
+
+
+<!-- <input type="number" id="num1">
+<input type="number" id="num2">
+<button onclick="abcd()">add</button>
+<p id="result"></p>
+<script>
+  function abcd(){
+    var n1 = Number(document.getElementById("num1").value)
+    var n2 = Number(document.getElementById("num2").value)
+    var sum = n1 * n2;
+    document.getElementById("result").innerHTML = sum;
+    
+  }
+</script>  -->
+
+
+
+
+
+
+
+<!-- <marquee id="mq" behavior="" direction="">Hello guys</marquee>
+ <script>
+var mq =document.getElementById("mq");
+mq.addEventListener('mouseover',()=>{
+  mq.stop();
+})
+mq.addEventListener('mouseout',()=>{
+  mq.start();
+})
+
+</script>  -->
+
+
+
+
+
+
+   
+
+ <!-- <h1 id="title">click button and see magic</h1>
+ 
+<button onclick="fun()">see magic</button>
+<script>
+var texts =["a" , "l" , "i" , "s" , "h" , "a"]
+var colors = ['red'  , "blue" , "green" , "cyan"]
+var sizes = ["30px" , "50px" , "70px" , "90px"]
+var i =0;
+function fun(){
+  var title = document.getElementById("title");
+  title.innerHTML = texts[i]
+  title.style.color = colors[i]
+  title.style.fontSize = sizes[i]
+  i++;
+  if(i >=texts.length)i=0
+}
+</script>  -->
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ <!-- <h2>Guess number (1 - 5)</h2>
+<input id="guess" type="number">
+<button onclick="check()">GUESS</button>
+
+<p id="result"></p>
+
+<script>
+var secret = 3;
+
+function check(){
+  var user = document.getElementById("guess").value;
+
+  if(user == ""){
+    document.getElementById("result").innerHTML = "pahle koi number select kro pagal"
+  }
+
+ else if(user == secret){
+    document.getElementById("res  ult").innerHTML = "🎉 Correct!";
+  } else {
+    document.getElementById("result").innerHTML = "❌ Try again";
+  }
+}
+</script>  -->
+
+
+
+
+<!--  
+<h1 id="dice">🎲</h1>
+<button onclick="roll()">roll dice</button>
+<h2 id="result"></h2>
+<script>
+
+function roll(){
+
+  var dice = ["\u2680" , "\u2681" , "\u2682" , "\u2683" , "\u2684" , "\u2685"]
+
+  var num = Math.floor(Math.random()*6)
+   
+  document.getElementById("dice").innerHTML = dice[num]
+  document.getElementById("result").innerHTML = "you got" + (num+1)
+
+}
+
+</script>-->
+yaha hu
+
+
+
+
+
+
+
+
+
+
+ <!-- <h1>Mini Calculator</h1>
+  <button onclick="calculator()">Try Calculator</button>
+
+  <script>
+    function calculator() {
+      let num1 = Number(prompt("Enter first number:"));
+      let num2 = Number(prompt("Enter second number:"));
+      let operation = prompt("Enter operation: +, -, *, /");
+
+      let result;
+
+      if(operation === "+"){
+        result = num1 + num2;
+      } else if(operation === "-"){
+        result = num1 - num2;
+      } else if(operation === "*"){
+        result = num1 * num2;
+      } else if(operation === "/"){
+       
+          result = num1 / num2;
+        } else {
+          alert("invalid operation")
+        } 
+        alert("result:" + result)
+    
+    }
+  </script>     -->
+
+
+  
+
+
+
+
+
+
+
+
+noman
+
+  <!-- <h2>Type Something 👇</h2>
+
+  <input type="text" id="text">
+  <button onclick="speak()">Speak 🔊</button>
+
+  <script>
+    function speak() {
+      var text = document.getElementById("text").value;
+
+      var speech = new SpeechSynthesisUtterance(text);
+      speech.lang = "ur-pk";
+
+      window.speechSynthesis.speak(speech);
+      
+    }
+ 
+  </script> -->
+
+
+<!-- <h1 id="status">Check Internet</h1>
+
+<button onclick="check()">Check</button>
+
+<script>
+
+function check(){
+
+  var status = document.getElementById("status");
+
+  if(navigator.onLine){
+      status.innerHTML = "Internet Connected ✅";
+  }else{
+      status.innerHTML = "Internet Disconnected ❌";
+  }
+
+}
+
+</script> -->
+
+
+
+
+  <!-- <input type="text" id="text">
+  <button onclick="speak()">speaker</button>
+  <script>
+
+function speak(){
+  var text = document.getElementById("text").value;
+
+  var speech = new SpeechSynthesisUtterance(text);
+
+  speech.lang = "us-en"
+
+  speechSynthesis.speak(speech)
+}
+
+  </script> -->
+
+
+  <!-- <textarea id="text" placeholder="Type your message..."></textarea>
+<p>Characters: <span id="count">0</span>/100</p>
+
+<script>
+let text = document.getElementById("text");
+let count = document.getElementById("count");
+
+text.addEventListener("input", function(){
+  count.textContent = text.value.length;
+
+  
+});
+</script> -->
+
+<!-- <script>
+  let count = 1;
+setInterval(function(){
+  alert("Magar ladle meow 😺 #" + count);
+  count++;
+}, 2000);
+ </script> -->
+
+
+ 
+<!-- 
+  <h2 id="clock"></h2>
+
+<script>
+let clock = document.getElementById("clock");
+
+setInterval(function(){
+  let time = new Date();
+  clock.innerHTML = time.toLocaleTimeString();
+}, 1000);
+</script>  -->
+
+
+
+
+  
+
+<!-- 
+
+
+
+-->
+
+
+
+<!-- 
+  <button id="runBtn" style="position: relative;">Catch Me 😜</button>
+<script>
+  
+let btn = document.getElementById("runBtn");
+btn.addEventListener("mouseover", function(){
+let x = Math.random() * (window.innerWidth - btn.offsetWidth);
+let y = Math.random() * (window.innerHeight - btn.offsetHeight);
+  btn.style.left = x + "px";
+  btn.style.top = y + "px";
+});
+</script> -->
+
+
+<!-- 
+<style>
+ body{
+    background-color: black;
+    cursor: none;
+
+ }
+ *{
+    cursor: none;
+ }
+ #box{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 3px solid cyan;
+    pointer-events: none;
+    position: fixed;
+    transition: 0.1s linear;
+  filter: blur(1px);
+
+ }
+ #dot{
+    height: 15px;
+    width: 15px;
+    background-color: cyan;
+    border-radius: 100%;
+    pointer-events: none;
+    position: fixed;
+ }
+ a:hover{
+    color: red;
+ }
+</style>
+<body>
+
+    <div id="box"></div>
+<div id="dot"></div>
+ 
+
+<a href="calculator.html">helo</a>
+    <script>
+        var box = document.getElementById("box")
+        var dot = document.getElementById("dot")
+
+        document.addEventListener("mousemove" , (e) =>{
+            dot.style.left = (e.clientX - 5 ) + "px"
+            dot.style.top = (e.clientY - 5 ) + "px"
+
+
+            box.style.left   = (e.clientX - 25 ) + "px"
+            box.style.top = (e.clientY - 25 ) + "px"
+        })
+    </script>  
+    -->
+
+
+
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        input{
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product{
+            width: 250px;
+            padding: 20px;
+            margin: 10px 0;
+            background: lightgray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Search Product</h1>
+
+    <input type="text" id="search" placeholder="Search product..." onkeyup="searchProduct()">
+
+    <div class="product">
+        <h2>Watch</h2>
+    </div>
+
+    <div class="product">
+        <h2>Shoes</h2>
+    </div>
+
+    <div class="product">
+        <h2>Bag</h2>
+    </div>
+
+    <div class="product">
+        <h2>Mobile</h2>
+    </div>
+
+    <div class="product">
+        <h2>Laptop</h2>
+    </div>
+
+
+    <script>
+
+        function searchProduct(){
+
+            var search = document.getElementById("search").value.toLowerCase()
+
+            var products = document.querySelectorAll(".product")
+
+            products.forEach(function(product){
+
+                var name = product.innerText.toLowerCase()
+
+                if(name.includes(search)){
+                    product.style.display = "block"
+                }
+                else{
+                    product.style.display = "none"
+                }
+
+            })
+
+        }
+
+    </script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- 
+       <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 100px;
+        }
+        input {
+            padding: 12px;
+            width: 250px;
+            border: 2px solid cyan;
+            border-radius: 8px;
+            background: #222;
+            color: white;
+            outline: none;
+        }
+        button {
+            padding: 12px 20px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 8px;
+            background: cyan;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: white;
+        }
+        #message {
+            color: cyan;
+            margin-top: 20px;
+        }
+    </style>
+
+    <h1>Copy My Text 📋</h1>
+    <input type="text" id="text" placeholder="Kuch likho...">
+    <button onclick="copyText()">Copy</button>
+    <p id="message"></p>
+    <script>
+        function copyText() {
+            let text = document.getElementById("text");
+            navigator.clipboard.writeText(text.value);
+            document.getElementById("message").innerText = "Copied! ✅";
+        }
+    </script>
+ -->
+
+
+  <!-- 
+  <div id="box"></div>
+
+  <br>
+  <button onclick="pause()">Pause ⏸</button>
+  <button onclick="play()">Play ▶</button>
+
+  <style>
+  #box{
+    width:100px;
+    height:100px;
+    background:blue;
+    position:relative;
+    animation: move 2s infinite alternate;
+  }
+
+  @keyframes move{
+    from{ left:0; }
+    to{ left:200px; }
+  }
+  </style>
+
+  <script>
+  let box = document.getElementById("box");
+
+  function pause(){
+    box.style.animationPlayState = "paused";
+  }
+
+  function play(){
+    box.style.animationPlayState = "running";
+  }
+  </script> -->
+
+
+  <!-- <button id="downbtn">⬇ Down</button>
+
+<div style="height: 2000px;">
+  Scroll karne ke liye content
+</div>
+
+<button id="upbtn">⬆ Up</button>
+<script>
+  downbtn.onclick = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth"
+    })
+  }
+
+  upbtn.onclick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div id="container">
+  <div class="a">1</div>
+  <div class="a">2</div>
+  <div class="a">3</div>
+  <div class="a">4</div>
+  <div class="a">5</div>
+   <div class="a">1</div>
+  <div class="a">2</div>
+  <div class="a">3</div>
+  <div class="a">4</div>
+  <div class="a">5</div>
+</div>
+
+<button onclick="shuffleDivs()">Shuffle</button>
+
+<script>
+function shuffleDivs() {
+  var container = document.getElementById("container");
+  var divs = Array.from(container.children);
+
+  divs.sort(() => Math.random() - 0.5);
+
+  container.innerHTML = "";
+  divs.forEach(div => container.appendChild(div));
+}
+</script> -->
+
+
+  <!-- <h1 id="task">Click Button 👇</h1>
+
+<button id="btn">Get Challenge</button>
+
+<script>
+  var tasks = [
+  "10 Pushups Lagao 💪",
+  "Aaj Sab Ko Smile Do 😊",
+  "1 Minute Dance Karo 💃",
+  "Teacher Ko Hi Koi Joke Sunao 😂",
+  "Apna Favorite Color Batao 🎨",
+  "5 Baar Jump Karo 🦘"
+];
+
+var btn = document.getElementById("btn");
+
+btn.addEventListener("click", function(){
+
+  var random = Math.floor(Math.random() * tasks.length);
+
+  document.getElementById("task").innerHTML = tasks[random];
+
+});
+</script> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+
+  <style>
+    body{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .game{
+      height:400px;
+      width:400px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .box{
+      height:80px;
+      width:80px;
+      border:3px solid black;
+      font-size:80px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .box:hover{
+      transform:scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="text">X turn</h1>
+  <div class="game">
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+    <div class="box" onclick="play(this)"></div>
+  </div>
+
+  <button onclick="reset()">reset</button>
+
+
+
+  <script>
+
+    var turn = "x"
+
+    function play(g){
+
+      if(g.innerHTML==""){
+
+        g.innerHTML = turn
+        
+
+        if(turn=="x"){
+          g.style.color = "red"
+          turn = "o"
+          document.getElementById("text").innerHTML = "O Turn"
+        }
+        else{
+          g.style.color = "blue"
+          turn = "x"
+          document.getElementById("text").innerHTML = "X Turn"
+        }
+
+        checkwinner()
+}
+      
+    }
+
+    function checkwinner(){
+
+      var box = document.querySelectorAll(".box")
+
+      // rows
+
+      if(box[0].innerHTML != "" &&  box[0].innerHTML == box[1].innerHTML && box[1].innerHTML == box[2].innerHTML){
+        alert(box[0].innerHTML + " winner")
+      }
+
+      else if(box[3].innerHTML !=  "" && box[3].innerHTML == box[4].innerHTML && box[4].innerHTML == box[5].innerHTML ){
+        alert(box[3].innerHTML + " winner")
+      }
+
+      else if(box[6].innerHTML != "" && box[6].innerHTML == box[7].innerHTML && box[7].innerHTML == box[8].innerHTML){
+        alert(box[6].innerHTML + " winner")
+      }
+
+      // columns
+
+        else if(box[0].innerHTML != "" && box[0].innerHTML == box[3].innerHTML && box[3].innerHTML == box[6].innerHTML){
+        alert(box[0].innerHTML + " winner")
+      }
+
+          else if(box[1].innerHTML != "" && box[1].innerHTML == box[4].innerHTML && box[4].innerHTML == box[7].innerHTML){
+        alert(box[1].innerHTML + " winner")
+      }
+
+         else if(box[2].innerHTML != "" && box[2].innerHTML == box[5].innerHTML && box[5].innerHTML == box[8].innerHTML){
+        alert(box[8].innerHTML + " winner")
+      }
+
+      // diagonals
+
+         else if(box[0].innerHTML != "" && box[0].innerHTML == box[4].innerHTML && box[4].innerHTML == box[8].innerHTML){
+        alert(box[0].innerHTML + " winner")
+      }
+
+         else if(box[2].innerHTML != "" && box[2].innerHTML == box[4].innerHTML && box[4].innerHTML == box[6].innerHTML){
+        alert(box[2].innerHTML + " winner")
+      }
+    }
+
+    function reset(){
+
+      var container = document.querySelectorAll(".box")
+
+      for(var i = 0 ; i < container.length; i++){
+        container[i].innerHTML = ""
+      }
+      turn="x"
+      document.getElementById("text").innerHTML = "X Turn"
+
+
+    }
+
+  </script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To Do List</title>
+
+<style>
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#f5f5f5;
+}
+
+.container{
+  width:350px;
+  padding:20px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 0 10px gray;
+  text-align:center;
+}
+
+
+
+input{
+  width:200px;
+  padding:10px;
+}
+
+button{
+  padding:10px;
+  cursor:pointer;
+}
+
+li{
+  font-size:20px;
+ text-align: start;
+  margin: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>To Do List</h1>
+
+  <input type="text" id="task" placeholder="Enter Task">
+
+  <button onclick="addTask()">Add</button>
+
+  <ul id="list"></ul>
+
+</div>
+
+<script>
+
+function addTask(){
+
+  var task = document.getElementById("task").value;
+
+  var li = document.createElement("li")
+
+  li.innerHTML = task 
+
+  document.getElementById("list").appendChild(li)
+
+  document.getElementById("task").value = ""
+
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>    -->
+
+  
+
+yaha hu abhi
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    text-align: center;
+    font-size: 30px;
+  }
+  #main{
+    height: 500px;
+    width: 700px;
+    border: 3px solid black;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 10px black;
+    transition: 1s;
+  }
+  .gallery img{
+    height: 150px;
+    width: 200px;
+    border-radius: 30px;
+    border: 2px solid black;
+    object-fit: cover;
+    margin: 5px;
+    transition: 0.3s;
+  }
+  .gallery img:hover{
+    transform: scale(1.1);
+    border: 3px solid red;
+  }
+</style>
+<body>
+
+
+  <h1>Gallery Design</h1>
+
+  <img src="https://tse1.explicit.bing.net/th/id/OIP.mwFyWINnpPYIZDAXrR8augHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" id="main" alt="">
+
+  <div class="gallery">
+
+    <img src="https://th.bing.com/th/id/R.a8398b21d0465d38a5d61734c4c5b66d?rik=1uZ8Kr7D4m5r9Q&pid=ImgRaw&r=0" onclick="changeimg(this)" alt="">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.29VcKQNiLIKPvIyP4U-KTAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" onclick="changeimg(this)" alt="">
+    <img src="https://wallpapercave.com/wp/wp6584633.jpg" onclick="changeimg(this)" alt="">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.5nuaGERmjz_sLGiLchh0LQHaEy?r=0&w=2048&h=1325&rs=1&pid=ImgDetMain&o=7&rm=3" onclick="changeimg(this)" alt="">
+    <img src="https://wallpaperaccess.com/full/39679.jpg" onclick="changeimg(this)" alt="">
+
+  </div>
+    
+
+  <script>
+function changeimg(box){
+
+
+var main = document.getElementById("main")
+
+main.style.opacity="0"
+
+setTimeout(function(){
+  main.src = box.src
+
+  main.style.opacity="1"
+
+},500)
+
+}
+
+  </script>
+
+
+
+  
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <input type="text" id="name" placeholder="your name">
+<input type="text" id="msg" placeholder="your msg">
+
+<button onclick="send()">send</button>
+<script>
+    function send(){
+    var name = document.getElementById("name").value;
+    var msg = document.getElementById("msg").value;
+  
+
+        if (name == "" || msg == "") {
+    alert("Please fill all fields");
+    return;
+}
+
+    var number = "923363216135"
+
+    var text = "name: " + name + "%0AMessage: " + msg ;
+
+    window.open("https://wa.me/" + number + "?text=" + text, "_blank")
+
+
+}
+</script> -->
+
+
+
+
+
+
+
+<!-- 
+
+ -->
+
+
+
+
+
+
+
+ <!-- <input type="text" id="taskInput" placeholder="Enter a task">
+<button id="addBtn">Add Task</button>
+<ul id="taskList"></ul>
+<script>
+let input = document.getElementById("taskInput");
+let button = document.getElementById("addBtn");
+let list = document.getElementById("taskList");
+
+button.addEventListener("click", function(){
+
+  if(input.value === "") return;
+
+  let li = document.createElement("li");
+  li.textContent = input.value;
+
+  li.addEventListener("click", function(){
+    li.remove();
+  });
+
+  list.appendChild(li);
+  input.value = "";
+
+});
+</script>  -->
+
+
+
+
+
+
+
+<!-- 
+
+ <style>
+  #container{
+    width: 1200px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #red{width: 150px;height: 150px;background-color: red;}
+  #blue{width: 150px;height: 150px;background-color: blue;}
+  #green{width: 150px;height: 150px;background-color: green;}
+  #orange{width: 150px;height: 150px;background-color: orange;}
+</style>
+<div id="container">
+  <button class="btn" id="red" ></button>
+  <button class="btn" id="blue"></button>
+  <button class="btn" id="green"></button>
+  <button class="btn" id="orange"></button>
+</div>
+<script>
+  var btn = document.querySelectorAll("button");
+
+  btn[0].addEventListener("click" , ()=>{
+    document.body.style.backgroundColor = "red"
+    document.body.style.transition ="1s"
+  })
+   btn[1].addEventListener("click" , ()=>{
+    document.body.style.backgroundColor = "blue"
+    document.body.style.transition ="1s"
+  })
+   btn[2].addEventListener("click" , ()=>{
+    document.body.style.backgroundColor = "green"
+    document.body.style.transition ="1s"
+  })
+   btn[3].addEventListener("click" , ()=>{
+    document.body.style.backgroundColor = "orange"
+    document.body.style.transition ="1s"
+  })
+
+  
+
+</script>  --> 
+
+  
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
